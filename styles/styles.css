@@ -202,6 +202,9 @@ header {
     background-color: #403F44;
     max-width: 100%;
     max-height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .logo {
     max-height: 141px;
@@ -242,7 +245,7 @@ footer {
 .pic3, 
 .pic4, 
 .pic5 {
-    width: 100%;
+    width: unset;
     height: 500px;
     object-fit: cover;
 }
