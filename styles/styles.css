@@ -181,7 +181,7 @@ label #cancel {
     " access admission shop";
     grid-gap: 30px;
     justify-items: stretch;
-    margin: 20px 70px;
+    margin: 20px 90px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -294,6 +294,15 @@ p {
     margin-top: 15px;
 }
 
+#dinosaur {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Abril Fatface';
+    font-weight: 100;
+    margin: 3% 10%;
+}
 
 /** Footer **/
 footer {
@@ -325,7 +334,7 @@ footer {
 }
 
 .explore-involved img {
-    height: 100%;
+    height: 355px;
     object-fit: cover;
 }
 
