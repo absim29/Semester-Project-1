@@ -16,6 +16,63 @@ body {
     margin: 0px;
 }
 
+
+/** Header **/
+header {
+    background-color: #403F44;
+    max-width: 100%;
+    max-height: 130px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo {
+    max-height: 141px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-top: -7px;
+}
+
+
+/** Navigation **/
+nav ul { 
+    float: right;
+    display: block;
+    margin-block-start: auto;
+    margin-right: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 95px;
+}
+
+nav ul li a {
+    font-family: 'Helvetica', Arial, sans-serif;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+label #btn,
+label #cancel {
+    color: var(--white);
+    font-size: 30px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check,
+.hide {
+    display: none;
+}
+
+
 /** Containers **/
 .home1 {
     display: grid;
@@ -51,6 +108,7 @@ body {
     position: absolute;
     right: 130px;
     bottom: 250px;
+    filter: drop-shadow(2px 4px 6px black);
 }
  
 .line {
@@ -72,6 +130,7 @@ body {
     grid-template-columns: 800px 620px;
     background-color: #B3C1C7;
 }
+
 .explore2 {
     grid-template-columns: 620px 800px;
     background-color: #B3C1C7;
@@ -97,22 +156,78 @@ body {
 
 .special {
     display: grid;
-    grid-template-rows: 150px 460px 460px;
+    grid-template-rows: 100px 460px 460px;
     align-items: start;
-    justify-items: center;
+    width: 400px;
 }
 
 .specialevent {
     display: grid;
-    grid-template-columns: 484px 472px 484px;
+    grid-template-columns: 484px 400px 484px;
     justify-items: center;
+    margin: 20px 36px;
 }
 
 .box {
     background-color: #F5F5F5;
-    width: 400px;
     height: 900px;
+    filter: drop-shadow(2px 4px 6px black);
 }
+
+.visit {
+    display: grid;
+    grid-template-areas: 
+    "location location hours"
+    " access admission shop";
+    grid-gap: 30px;
+    justify-items: stretch;
+    margin: 20px 70px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.location {
+    grid-area: location;
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+    background-color: #F5F5F5;
+}
+
+.hours {
+    grid-area: hours;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #F5F5F5;
+} 
+
+.access {
+    grid-area: access;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.admission {
+    grid-area: admission;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.shop {
+    grid-area: shop;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
 
 /** Text styling **/
 h1 {
@@ -130,7 +245,8 @@ p {
 .explore1 h1,
 .explore2 h1,
 .explore3 h1, 
-.exibit h1 {
+.exibit h1,
+.visit h1 {
     margin-left: 30px;
 }
 
@@ -157,61 +273,27 @@ p {
 }
 
 .special h1 {
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
 }
 
-/** Navigation **/
-nav ul { 
-    float: right;
-    display: block;
-    margin-block-start: auto;
-    margin-right: 70px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-top: 95px;
-}
-
-nav ul li a {
-    font-family: 'Helvetica', Arial, sans-serif;
-    padding: 10px;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 100;
-    text-decoration: none;
-}
-
-label #btn,
-label #cancel {
-    color: var(--white);
-    font-size: 30px;
-    float: right;
-    margin-top: 10px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-/** Header **/
-header {
-    background-color: #403F44;
-    max-width: 100%;
-    max-height: 130px;
-    position: sticky;
-    top: 0;
+.access h1,
+.admission h1,
+.shop h1 {
+    position: absolute;
     z-index: 1;
+    margin-top: 80px;
 }
-.logo {
-    max-height: 141px;
-    margin-left: 100px;
-    margin-bottom: 0;
-    margin-top: -7px;
+
+.hours p {
+    line-height: 40px;
 }
+
+.location h1,
+.hours h1 {
+    margin-top: 15px;
+}
+
 
 /** Footer **/
 footer {
@@ -227,6 +309,7 @@ footer {
     padding: 10px;
 }
 
+
 /** Images styling **/
 .coverpic {
     min-width: 100%;
@@ -238,6 +321,7 @@ footer {
 .container-img {
     height: 100%;
     object-fit: cover;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .pic1, 
@@ -272,6 +356,28 @@ footer {
     width: 400px;
 }
 
+.access img,
+.hours img,
+.admission img,
+.shop img {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    opacity: 60%;
+}
+
+.location img {
+    width: 810px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 0px 10px 5px;
+}
+
+.shop img {
+    object-position: 100% 0%;
+}
+
+
 /** CTA **/
 .cta {
     background-color: #345481;
@@ -282,6 +388,7 @@ footer {
     text-decoration: none;
     padding: 12px 50px;
     border-radius: 15px;
+    filter: drop-shadow(2px 2px 2px grey);
 }
 .cta:hover {
     background-color: #4894C8;
