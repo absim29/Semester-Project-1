@@ -264,7 +264,12 @@ p {
     top: 0;
     color: #fff;
     font-weight: 100;
-    margin-left: 100px;
+    margin: 20px 100px;
+}
+
+.exibit1 h1,
+.exibit5 h1 {
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 .exibit2 h1,
