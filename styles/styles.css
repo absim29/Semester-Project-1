@@ -308,6 +308,7 @@ p {
     font-family: 'Abril Fatface';
     font-weight: 100;
     margin: 4% 10%;
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 
