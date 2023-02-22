@@ -54,6 +54,9 @@
     h1 {
         font-size: 60px;
     }
+    .special h1 {
+        font-size: 45px;
+    }
     p {
         font-size: 40px;
     }
@@ -101,7 +104,9 @@
     .admission, .shop {
         height: 800px;
     }
-
+    .box {
+        height: fit-content;
+    }
 
 
 }
