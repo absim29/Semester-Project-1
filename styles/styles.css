@@ -169,6 +169,7 @@ label #cancel {
     justify-items: center;
     justify-content: space-evenly;
     margin: 20px 36px;
+    gap: 10px;
 }
 
 .box {

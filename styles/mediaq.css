@@ -92,6 +92,9 @@
         width: 850px;
         object-fit: cover;
     }
+    .special img {
+        height: 450px;
+    }
     .visit {
         grid-template-areas:
         "location location"
