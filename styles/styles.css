@@ -237,9 +237,14 @@ h1 {
 
 p {
     font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
     margin: 15px 30px 40px;
+}
+
+.specialevent p,
+.visit p {
+    font-size: 21px;
 }
 
 .explore1 h1,
@@ -268,8 +273,9 @@ p {
     color: #111;
 }
 
-.exibitions p {
-    margin: 20px 100px;
+.exibitions p,
+#home {
+    margin: 20px 150px;
 }
 
 .special h1 {
@@ -303,6 +309,7 @@ p {
     font-weight: 100;
     margin: 4% 10%;
 }
+
 
 /** Footer **/
 footer {
