@@ -1,0 +1,107 @@
+/* Media queries */
+@media screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    header {
+        position: sticky;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+    }
+    label #btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: -115%;
+        background: #B3C1C7;
+        top: 129px;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 55px 0;
+    }
+    nav ul li a {
+        font-family: 'Abril Fatface', Helvetica, sans-serif;
+        font-size: 40px;
+        color: black;
+    }
+    #check:checked ~ ul {
+        right: -70px;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+    .explore {
+        width: 100%;
+        position: initial;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 40px;
+    }
+    #home {
+        margin: 30px 30px 0px;
+    }
+    #dinosaur {
+        top: 2500px;
+        text-align: left;
+        inline-size: max-content;
+        font-size: 40px;
+    }
+    .cta {
+        padding: 20px 200px;
+        font-size: 50px;
+    }
+    .container-img {
+        display: none;
+    }
+    .home1, .home2 {
+        display: block;
+    }
+    .slider {
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        overflow: scroll;
+        margin: 10px;
+        width: 170vh;
+    }
+    .slider img {
+        height: 500px;
+        width: 850px;
+        object-fit: cover;
+    }
+    .visit {
+        grid-template-areas:
+        "location location"
+        "hours access"
+        "admission shop";
+    }
+    .hours, .access {
+        height: 650px;
+    }
+    .admission, .shop {
+        height: 800px;
+    }
+
+
+
+}
