@@ -58,7 +58,7 @@ nav ul li a {
 
 label #btn,
 label #cancel {
-    color: var(--white);
+    color: #fff;
     font-size: 30px;
     float: right;
     margin-top: 10px;
@@ -70,6 +70,7 @@ label #cancel {
 #check,
 .hide {
     display: none;
+    color: #fff;
 }
 
 
