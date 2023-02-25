@@ -140,6 +140,7 @@
 
     /*Visit page*/
     .visit {
+        grid-template-columns: 170px;
         grid-template-areas:
         "location location"
         "hours access"
