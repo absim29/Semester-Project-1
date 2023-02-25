@@ -164,7 +164,7 @@
     .access img, .hours img, 
     .admission img, .shop img {
         width: 100%;
-        max-height: 250px;
+        min-height: 250px;
     }
     .visit h1 {
         margin: 5px;
