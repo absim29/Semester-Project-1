@@ -64,7 +64,7 @@
         margin-bottom: 30px;
     }
     #dinosaur {
-        top: 1430px;
+        top: 1385px;
         font-size: 20px;
     }
     .cta {
@@ -96,7 +96,7 @@
 
     /*Exibitions page*/
     .exibitions h1 {
-        margin: 10px 20px;
+        margin: 0px 20px;
     }
 
     /*Special Events page*/
@@ -130,6 +130,9 @@
     #kidimg {
         object-position: 0%;
     }
+    .explore-involved h1 {
+        margin-left: 15px;
+    }
 
     /*Visit page*/
     .visit {
@@ -160,7 +163,7 @@
     }
     .visit h1 {
         margin: 5px;
-        font-size: 20px;
+        font-size: 25px;
     }
     .hours p {
         line-height: 20px;
