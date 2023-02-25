@@ -42,7 +42,7 @@
     }
     nav ul li a {
         font-family: 'Abril Fatface', Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         color: black;
     }
     #check:checked ~ ul {
