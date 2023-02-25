@@ -180,3 +180,112 @@
         font-size: 14px;
     }
 }
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p,
+    .exibitions p,
+    .specialevent p,
+    .visit p,
+    #home {
+        font-size: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: 100;
+    }
+    /*Header*/
+    header {
+        height: fit-content;
+    }
+    .logo {
+        height: 120px;
+        margin: 10px;
+    }
+    label #btn {
+        display: block;
+        font-size: 80px;
+        margin: 25px;
+    }
+    ul {
+        position: fixed;
+        width: 50%;
+        height: 65%;
+        right: -120%;
+        background: #B3C1C7;
+        top: 130px;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+    }
+    nav ul li a {
+        font-family: 'Abril Fatface', Helvetica, sans-serif;
+        font-size: 40px;
+        color: black;
+        line-height: 150px;
+    }
+    #check:checked ~ ul {
+        right: -70px;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+        font-size: 80px;
+        margin: 25px;
+    }
+    #dinosaur {
+        color: black;
+        filter: none;
+        font-size: 35px;
+        margin: auto;
+        position: relative;
+    }
+    x.visit {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .visit {
+        grid-template-areas:
+            "location location"
+            "hours access"
+            "admission shop";
+        grid-template-columns: 250px 250px;
+    }
+    .explore1, 
+    .explore2,
+    .explore3 {
+        grid-template-columns: 50% 50%;
+        overflow: hidden;
+    }
+    .explore-involved img {
+        min-height: 570px;
+        width: 100%;
+    }
+    #kidimg {
+        object-position: 22%;
+    }
+    .exibitions img {
+        width: 100%;
+    }
+    .hours, .access,
+    .admission, .shop {
+        max-width: 400px;
+        height: 100%;
+    }
+    .access img, .hours img, .admission img, .shop img {
+        width: 100%;
+    }
+}

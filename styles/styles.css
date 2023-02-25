@@ -206,7 +206,7 @@ label #cancel {
     grid-area: location;
     display: flex;
     flex-direction: column;
-    width: 830px;
+    max-width: 830px;
     background-color: #F5F5F5;
 }
 
@@ -214,7 +214,7 @@ label #cancel {
     grid-area: hours;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     background-color: #F5F5F5;
 } 
 
@@ -222,7 +222,7 @@ label #cancel {
     grid-area: access;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
@@ -231,7 +231,7 @@ label #cancel {
     grid-area: admission;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
@@ -240,7 +240,7 @@ label #cancel {
     grid-area: shop;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
