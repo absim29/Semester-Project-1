@@ -15,6 +15,7 @@
     }
     /*Header*/
     .logo {
+        height: auto;
         margin-left: 5px;
     }
     label #btn {
