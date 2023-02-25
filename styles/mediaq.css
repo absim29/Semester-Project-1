@@ -64,8 +64,9 @@
         margin-bottom: 30px;
     }
     #dinosaur {
-        top: 1385px;
         font-size: 20px;
+        margin-top: auto;
+        position: relative;
     }
     .cta {
         padding: 15px 100px;
