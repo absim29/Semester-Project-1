@@ -64,6 +64,8 @@
         margin-bottom: 30px;
     }
     #dinosaur {
+        color: black;
+        filter: none;
         font-size: 20px;
         margin-top: auto;
         position: relative;
