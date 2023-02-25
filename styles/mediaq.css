@@ -5,15 +5,17 @@
         flex-direction: column;
         align-items: center;
     }
-    .logo {
-        margin-left: 0;
+    p, 
+    .specialevent p,
+    .visit p {
+        font-size: 18px;
     }
-    header {
-        position: sticky;
-        overflow: hidden;
-        width: 100%;
-        top: 0;
-        z-index: 2;
+    h1 {
+        font-size: 30px;
+    }
+    /*Header*/
+    .logo {
+        margin-left: 5px;
     }
     label #btn {
         display: block;
@@ -47,69 +49,114 @@
     #check:checked ~ label #cancel {
         display: block;
     }
+
+    /*Home page*/
     .explore {
-        width: 100%;
+        width: 100vw;
         position: initial;
-    }
-    h1 {
-        font-size: 60px;
-    }
-    .special h1 {
-        font-size: 45px;
-    }
-    p {
-        font-size: 40px;
+        height: 270px;
     }
     #home {
         margin: 30px 30px 0px;
     }
     #dinosaur {
-        top: 2500px;
-        text-align: left;
-        inline-size: max-content;
-        font-size: 40px;
+        top: 1420px;
+        font-size: 20px;
     }
     .cta {
-        padding: 20px 200px;
-        font-size: 50px;
+        padding: 20px 100px;
+        font-size: 25px;
+    }
+    .coverpic {
+        width: 100vw;
     }
     .container-img {
         display: none;
     }
     .home1, .home2 {
         display: block;
+        height: auto;
     }
     .slider {
         display: inline-block;
         position: relative;
         white-space: nowrap;
         overflow: scroll;
-        margin: 10px;
-        width: 170vh;
+        width: 96vw;
     }
     .slider img {
-        height: 500px;
-        width: 850px;
+        height: 250px;
+        width: 85%;
         object-fit: cover;
     }
+
+    /*Exibitions page*/
+    .exibitions h1 {
+        margin: 10px 20px;
+    }
+    .exibitions p {
+        margin: 15px 30px;
+    }
+
+    /*Special Events page*/
     .special img {
         height: 450px;
     }
-    .visit {
-        grid-template-areas:
-        "location location"
-        "hours access"
-        "admission shop";
-    }
-    .hours, .access {
-        height: 650px;
-    }
-    .admission, .shop {
-        height: 800px;
+    .explore-involved img,
+    .exibitions img {
+        height: 300px;
+        min-width: 100%;
+        max-width: 480px;
     }
     .box {
         height: fit-content;
     }
 
+    /*Explore page*/
+    .explore1, .explore3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .explore2 {
+        display: flex;
+        flex-direction: column;
+    }
 
+    /*Visit page*/
+    .visit {
+        grid-template-areas:
+        "location location"
+        "hours access"
+        "admission shop";
+        margin: 15px 20px;
+        gap: 10px;
+    }
+    .location {
+        max-width: 450px;
+    }
+    .hours, .access,
+    .admission, .shop {
+        max-width: 220px;
+    }
+    .hours, .access {
+        height: 460px;
+    }
+    .admission, .shop {
+        height: 640px;
+    }
+    .access img, .hours img, 
+    .admission img, .shop img {
+        width: 100%;
+        height: 300px;
+    }
+    .visit h1 {
+        margin: 16px 16px;
+        font-size: 30px;
+    }
+    .visit p {
+        margin: 15px;
+    }
+    .hours p {
+        line-height: 2;
+    }
 }
