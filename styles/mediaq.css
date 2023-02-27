@@ -17,6 +17,7 @@
         font-size: 30px;
         font-weight: 100;
     }
+
     /*Header*/
     .logo {
         height: 100px;
@@ -97,10 +98,12 @@
         width: 85%;
         object-fit: cover;
     }
+
     /*Exibitions page*/
     .exibitions h1 {
         margin: 0px 20px;
     }
+
     /*Special Events page*/
     .special img {
         height: 450px;
@@ -153,7 +156,7 @@
         "admission shop";
         margin: 10px;
         gap: 10px;
-        grid-template-columns: minmax(50%, 100%) minmax(50%, 100%);
+        grid-template-columns: minmax(45vw, 100%) minmax(45vw, 100%);
     }
     .location {
         max-width: 100%;
