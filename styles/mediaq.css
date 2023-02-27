@@ -97,24 +97,29 @@
         width: 85%;
         object-fit: cover;
     }
-
     /*Exibitions page*/
     .exibitions h1 {
         margin: 0px 20px;
     }
-
     /*Special Events page*/
     .special img {
         height: 450px;
-        width: 350px;
+        width: 100%;
     }
     .specialevent {
-        width: 300px;
+        margin: 15px;
+    }
+    .special {
+        min-width: 100%;
+        align-items: center;
     }
     .box {
         height: fit-content;
-        width: min-content;
+        width: 100%;
     }
+    .special h1 {
+        margin: 15px;
+    }    
 
     /*Explore page*/
     .explore-involved img,
@@ -140,20 +145,20 @@
 
     /*Visit page*/
     .visit {
-        grid-template-columns: 170px;
         grid-template-areas:
         "location location"
         "hours access"
         "admission shop";
         margin: 10px;
         gap: 10px;
+        grid-template-columns: minmax(50%, 100%) minmax(50%, 100%);
     }
     .location {
-        max-width: 355px;
+        max-width: 100%;
     }
     .hours, .access,
     .admission, .shop {
-        max-width: 170px;
+        max-width: 100%;
     }
     .hours, .access {
         height: 430px;
@@ -229,7 +234,7 @@
     }
     nav ul li a {
         font-family: 'Abril Fatface', Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         color: black;
         line-height: 150px;
     }
@@ -244,26 +249,51 @@
         font-size: 80px;
         margin: 25px;
     }
+
+    /*Home page*/
+    .explore {
+        width: 100vw;
+        position: initial;
+        height: 250px;
+    }
+    .explore p {
+        margin-bottom: 30px;
+    }
     #dinosaur {
         color: black;
         filter: none;
-        font-size: 35px;
-        margin: auto;
+        font-size: 20px;
+        margin-top: auto;
         position: relative;
     }
-    x.visit {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
+    .cta {
+        padding: 15px 100px;
+        font-size: 20px;
     }
-    .visit {
-        grid-template-areas:
-            "location location"
-            "hours access"
-            "admission shop";
-        grid-template-columns: 250px 250px;
+    .coverpic {
+        width: 100vw;
     }
+    .container-img {
+        display: none;
+    }
+    .home1, .home2 {
+        display: block;
+        height: auto;
+    }
+    .slider {
+        display: inline-block;
+        position: relative;
+        white-space: nowrap;
+        overflow: scroll;
+        width: 96vw;
+    }
+    .slider img {
+        height: 250px;
+        width: 85%;
+        object-fit: cover;
+    }
+    
+    /*Explore page*/
     .explore1, 
     .explore2,
     .explore3 {
@@ -271,7 +301,7 @@
         overflow: hidden;
     }
     .explore-involved img {
-        min-height: 570px;
+        height: 100%;
         width: 100%;
     }
     #kidimg {
@@ -280,12 +310,51 @@
     .exibitions img {
         width: 100%;
     }
+    /*Exibitions page*/
+    .pic1, .pic2, 
+    .pic3, .pic4 {
+        object-position: bottom;
+    }
+    .exibitions h1 {
+        margin: 20px;
+    }
+    /*Visit page*/
+    .visit {
+        grid-template-areas:
+            "location location"
+            "hours access"
+            "admission shop";
+        grid-template-columns: minmax(50%, 100%) minmax(50%, 100%);
+        margin: 30px;
+    }
     .hours, .access,
     .admission, .shop {
         max-width: 400px;
         height: 100%;
     }
-    .access img, .hours img, .admission img, .shop img {
+    .access img, 
+    .hours img, 
+    .admission img, 
+    .shop img {
         width: 100%;
+    }
+    /*Special Events page*/
+    .special img {
+        height: 450px;
+        width: 100%;
+    }
+    .specialevent {
+        margin: 15px;
+    }
+    .special {
+        min-width: 100%;
+        align-items: center;
+    }
+    .box {
+        height: fit-content;
+        width: 100%;
+    }
+    .special h1 {
+        margin: 15px;
     }
 }
