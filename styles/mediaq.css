@@ -109,6 +109,7 @@
     .specialevent {
         width: 100vw;
         margin: 0px;
+        margin-bottom: 15px;
     }
     .special {
         min-width: 100%;
