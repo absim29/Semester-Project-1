@@ -174,7 +174,7 @@
     .access img, .hours img, 
     .admission img, .shop img {
         width: 100%;
-        height: 290px;
+        height: 250px;
     }
     .visit h1 {
         margin: 5px;
