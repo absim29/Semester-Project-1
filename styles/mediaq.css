@@ -1,5 +1,5 @@
 /* Media queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     main {
         display: flex;
         flex-direction: column;
@@ -186,12 +186,7 @@
     }
 }
 
-@media screen and (min-width: 501px) and (max-width: 800px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (min-width: 500px) and (max-width: 800px) {
     p,
     .exibitions p,
     .specialevent p,
@@ -205,94 +200,39 @@
         font-weight: 100;
     }
     /*Header*/
-    header {
-        height: fit-content;
-    }
     .logo {
         height: 120px;
         margin: 10px;
     }
     label #btn {
-        display: block;
         font-size: 80px;
         margin: 25px;
     }
     ul {
-        position: fixed;
         width: 50%;
         height: 65%;
-        right: -120%;
-        background: #B3C1C7;
         top: 130px;
-        text-align: center;
-        transition: all .5s;
-        z-index: 1;
     }
     nav ul li {
-        display: block;
         margin: 30px 0;
     }
     nav ul li a {
-        font-family: 'Abril Fatface', Helvetica, sans-serif;
-        font-size: 35px;
-        color: black;
         line-height: 150px;
     }
-    #check:checked ~ ul {
-        right: -70px;
-    }
-    #check:checked ~ label #btn {
-        display: none;
-    }
     #check:checked ~ label #cancel {
-        display: block;
         font-size: 80px;
         margin: 25px;
     }
 
-    /*Home page*/
-    .explore {
-        width: 100vw;
-        position: initial;
-        height: 250px;
+    /*Exibitions page*/
+    .pic1, .pic2, 
+    .pic3, .pic4 {
+        object-position: bottom;
     }
-    .explore p {
-        margin-bottom: 30px;
+    .exibitions h1 {
+        margin: 20px;
     }
-    #dinosaur {
-        color: black;
-        filter: none;
-        font-size: 20px;
-        margin-top: auto;
-        position: relative;
-    }
-    .cta {
-        padding: 15px 100px;
-        font-size: 20px;
-    }
-    .coverpic {
-        width: 100vw;
-    }
-    .container-img {
-        display: none;
-    }
-    .home1, .home2 {
-        display: block;
-        height: auto;
-    }
-    .slider {
-        display: inline-block;
-        position: relative;
-        white-space: nowrap;
-        overflow: scroll;
-        width: 96vw;
-    }
-    .slider img {
-        height: 250px;
-        width: 85%;
-        object-fit: cover;
-    }
-    
+
     /*Explore page*/
     .explore1, 
     .explore2,
@@ -310,22 +250,13 @@
     .exibitions img {
         width: 100%;
     }
-    /*Exibitions page*/
-    .pic1, .pic2, 
-    .pic3, .pic4 {
-        object-position: bottom;
-    }
-    .exibitions h1 {
-        margin: 20px;
-    }
+
     /*Visit page*/
     .visit {
-        grid-template-areas:
-            "location location"
-            "hours access"
-            "admission shop";
-        grid-template-columns: minmax(50%, 100%) minmax(50%, 100%);
-        margin: 30px;
+        margin: 20px;
+    }
+    .hours p {
+        line-height: 35px;
     }
     .hours, .access,
     .admission, .shop {
@@ -337,24 +268,5 @@
     .admission img, 
     .shop img {
         width: 100%;
-    }
-    /*Special Events page*/
-    .special img {
-        height: 450px;
-        width: 100%;
-    }
-    .specialevent {
-        margin: 15px;
-    }
-    .special {
-        min-width: 100%;
-        align-items: center;
-    }
-    .box {
-        height: fit-content;
-        width: 100%;
-    }
-    .special h1 {
-        margin: 15px;
     }
 }
