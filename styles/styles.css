@@ -85,6 +85,7 @@ label #cancel {
     height: 300px;
     padding-bottom: 2%;
     width: 100vw;
+    padding: 0px 20px;
 }
 
 .home2 {
@@ -96,6 +97,7 @@ label #cancel {
     height: 300px;
     padding-bottom: 2%;
     width: 100vw;
+    padding: 0px 20px;
 }
 
 .container {
@@ -199,7 +201,7 @@ label #cancel {
     "location location hours"
     " access admission shop";
     grid-template-columns: minmax(30vw, 100%) minmax(30vw, 100%) minmax(30vw, 100%);
-    grid-gap: 30px;
+    grid-gap: 25px;
     justify-items: stretch;
     justify-content: space-evenly;
     margin: 30px;
