@@ -404,7 +404,8 @@ footer {
 .hours img,
 .admission img,
 .shop img {
-    height: 500px;
+    max-height: 500px;
+    min-height: 500px;
     width: 400px;
     object-fit: cover;
     opacity: 60%;
