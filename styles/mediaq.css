@@ -217,14 +217,14 @@
     }
     ul {
         width: 50%;
-        height: 65%;
+        height: fit-content;
         top: 130px;
     }
     nav ul li {
         margin: 30px 0;
     }
     nav ul li a {
-        line-height: 150px;
+        line-height: 75px;
     }
     #check:checked ~ label #cancel {
         font-size: 80px;
