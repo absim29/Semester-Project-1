@@ -41,7 +41,7 @@ nav ul {
     float: right;
     display: block;
     margin-block-start: auto;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 
 nav ul li {
@@ -78,26 +78,28 @@ label #cancel {
 /** Containers **/
 .home1 {
     display: grid;
-    grid-template-columns: 300px 300px 600px;
+    grid-template-columns: 20% 20% 60%;
     justify-items: stretch;
     align-items: center;
     justify-content: center;
     height: 300px;
     padding-bottom: 2%;
+    width: 100vw;
 }
 
 .home2 {
     display: grid;
-    grid-template-columns: 600px 300px 300px;
+    grid-template-columns: 60% 20% 20%;
     justify-items: stretch;
     align-items: center;
     justify-content: center;
     height: 300px;
     padding-bottom: 2%;
+    width: 100vw;
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -134,16 +136,17 @@ label #cancel {
     align-items: center;
     justify-items: stretch;
     justify-content: center;
+    overflow: hidden;
 }
 
 .explore1, 
 .explore3 {
-    grid-template-columns: 800px 620px;
+    grid-template-columns: 60% 40%;
     background-color: #DFE4E6;
 }
 
 .explore2 {
-    grid-template-columns: 620px 800px;
+    grid-template-columns: 40% 60%;
     background-color: #B3C1C7;
 }
 
@@ -195,10 +198,11 @@ label #cancel {
     grid-template-areas: 
     "location location hours"
     " access admission shop";
+    grid-template-columns: minmax(30vw, 100%) minmax(30vw, 100%) minmax(30vw, 100%);
     grid-gap: 30px;
     justify-items: stretch;
     justify-content: space-evenly;
-    margin: 20px 90px;
+    margin: 30px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -206,7 +210,6 @@ label #cancel {
     grid-area: location;
     display: flex;
     flex-direction: column;
-    max-width: 830px;
     background-color: #F5F5F5;
 }
 
@@ -214,7 +217,6 @@ label #cancel {
     grid-area: hours;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     background-color: #F5F5F5;
 } 
 
@@ -222,7 +224,6 @@ label #cancel {
     grid-area: access;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
@@ -231,7 +232,6 @@ label #cancel {
     grid-area: admission;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
@@ -240,7 +240,6 @@ label #cancel {
     grid-area: shop;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     background-color: #F5F5F5;
     position: relative;
 }
@@ -355,6 +354,7 @@ footer {
 }
 
 .coverpic {
+    width: 100vw;
     min-width: 100%;
     height: auto;
     position: relative;
@@ -368,12 +368,13 @@ footer {
 }
 
 .explore-involved img {
-    height: 355px;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .exibitions img {
-    width: unset;
+    width: 100%;
     height: 500px;
     object-fit: cover;
 }
@@ -406,7 +407,7 @@ footer {
 .shop img {
     max-height: 500px;
     min-height: 500px;
-    width: 400px;
+    width: 100%;
     object-fit: cover;
     opacity: 60%;
 }
@@ -420,6 +421,9 @@ footer {
 
 .shop img {
     object-position: 100% 0%;
+}
+#kidimg {
+    object-position: 20%;
 }
 
 
