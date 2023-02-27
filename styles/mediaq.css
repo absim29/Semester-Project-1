@@ -174,7 +174,7 @@
     .access img, .hours img, 
     .admission img, .shop img {
         width: 100%;
-        min-height: 250px;
+        min-height: 300px;
     }
     .visit h1 {
         margin: 5px;
@@ -204,6 +204,7 @@
         font-size: 32px;
         font-weight: 100;
     }
+
     /*Header*/
     .logo {
         height: 120px;
@@ -267,11 +268,5 @@
     .admission, .shop {
         max-width: 400px;
         height: 100%;
-    }
-    .access img, 
-    .hours img, 
-    .admission img, 
-    .shop img {
-        width: 100%;
     }
 }
