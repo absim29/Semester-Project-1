@@ -88,9 +88,9 @@ label #cancel {
 
 
 /** Containers **/
-.home1 {
+.home1,
+.home2 {
     display: grid;
-    grid-template-columns: 20% 20% 60%;
     justify-items: stretch;
     align-items: center;
     justify-content: center;
@@ -100,16 +100,12 @@ label #cancel {
     padding: 0px 20px;
 }
 
+.home1 {   
+    grid-template-columns: 20% 20% 60%;
+}
+
 .home2 {
-    display: grid;
     grid-template-columns: 60% 20% 20%;
-    justify-items: stretch;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    padding-bottom: 2%;
-    width: var(--screen-size);
-    padding: 0px 20px;
 }
 
 .container {
@@ -220,42 +216,40 @@ label #cancel {
     filter: drop-shadow(2px 4px 6px var(--black));
 }
 
-.location {
-    grid-area: location;
+.location,
+.hours,
+.access,
+.admission,
+.shop {
     display: flex;
     flex-direction: column;
     background-color: var(--light-grey);
+}
+
+.access,
+.admission,
+.shop {
+    position: relative;
+}
+
+.location {
+    grid-area: location;
 }
 
 .hours {
     grid-area: hours;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
 } 
 
 .access {
     grid-area: access;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    position: relative;
 }
 
 .admission {
     grid-area: admission;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    position: relative;
 }
 
 .shop {
     grid-area: shop;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    position: relative;
 }
 
 
@@ -301,7 +295,7 @@ p {
 .exibit2 h1,
 .exibit3 h1,
 .exibit4 h1 {
-    color: #111;
+    color: var(--black);
 }
 
 .exibitions p,
@@ -344,21 +338,6 @@ p {
     font-weight: 100;
     margin: 4% 10%;
     filter: drop-shadow(10px 10px 10px var(--black));
-}
-
-
-/** Footer **/
-footer {
-    background: var(--dark-grey);
-    max-height: 60px;
-    width: auto;
-    margin: 0px;
-    text-align: center;
-    color: var(--white);
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10px;
 }
 
 
@@ -455,4 +434,19 @@ footer {
 }
 .cta:hover {
     background-color: #4894C8;
+}
+
+
+/** Footer **/
+footer {
+    background: var(--dark-grey);
+    max-height: 60px;
+    width: auto;
+    margin: 0px;
+    text-align: center;
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
 }

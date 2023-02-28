@@ -159,11 +159,12 @@
         gap: 10px;
         grid-template-columns: minmax(45vw, 100%) minmax(45vw, 100%);
     }
-    .location {
-        max-width: var(--full-size);
-    }
-    .hours, .access,
-    .admission, .shop {
+
+    .location,
+    .hours, 
+    .access,
+    .admission, 
+    .shop {
         max-width: var(--full-size);
     }
     .hours, .access {
@@ -240,14 +241,12 @@
     .exibitions h1 {
         margin: 20px;
     }
-    .exibitions img {
+    .exibitions img,
+    .explore-involved img {
         width: var(--full-size);
     }
 
     /*Explore page*/
-    .explore-involved img {
-        width: var(--full-size);
-    }
     #kidimg {
         object-position: 22%;
     }
@@ -295,14 +294,12 @@
     }
     .access img,
     .admission img,
-    .shop img {
+    .shop img,
+    .exibitions img {
         width: var(--full-size);
     }
     .shop img {
         object-position: 80% 0%;
-    }
-    .exibitions img {
-        width: var(--full-size);
     }
     .exibitions p,
     #home {
