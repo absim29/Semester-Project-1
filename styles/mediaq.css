@@ -77,10 +77,11 @@
         position: relative;
     }
     #dino {
-        color: var(--black)
+        color: var(--black);
+        text-decoration: underline;
     }
     #dino::after {
-        background-color: var(--black);
+        display: none;
     }
     .cta {
         padding: 15px 100px;
