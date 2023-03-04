@@ -73,6 +73,9 @@
         margin-top: auto;
         position: relative;
     }
+    #dino {
+        color: var(--black)
+    }
     .cta {
         padding: 15px 100px;
         font-size: 20px;
