@@ -33,7 +33,7 @@
         height: var(--full-size);
         right: -120%;
         background: var(--light-blue);
-        top: 124px;
+        top: 134px;
         text-align: center;
         transition: all .5s;
         z-index: 1;
@@ -220,7 +220,6 @@
     ul {
         width: 50%;
         height: fit-content;
-        top: 130px;
     }
     nav ul li {
         margin: 30px 0;
