@@ -47,6 +47,14 @@
         font-size: 35px;
         color: var(--black);
     }
+    nav ul li a:hover {
+        background-color: none;
+    }
+    
+    nav ul li a:active {
+        background-color: none;
+    }
+
     #check:checked ~ ul {
         right: -30px;
     }
